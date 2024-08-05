@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUBBYXXV </title>
+    <!-- Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="../CSS/transaction.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!-- Brand name -->
+        <div class="logo">RUBBY XXV</div>
+
+        <!-- Menu -->
+        <div class="nav-container">
+            <div class="navbar-nav"> 
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#contact">CONTACT</a>
+                <a href="#product">PRODUCT</a>
+            </div>
+
+            <div class="extra-navbar">
+                <a href="#" id="search-button"><i data-feather="search"></i></a>
+                <a href="#" id="cart-button"><i data-feather="shopping-bag"></i></a>
+            </div>
+        </div>
+
+        <!-- Search -->
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Search">
+            <label for="search-box"><i data-feather="search"></i></label>
+        </div>
+
+        <!-- Shopping Cart -->
+        <div class="shopping-cart">
+            <h3>Cart</h3>
+            <div class="cart-items">
+                <!-- Items will be added here -->
+            </div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="total-price">IDR 0</span>
+            </div>
+            <button id="checkout-button">Checkout</button>
+        </div>
+    </nav>
+
+    <div class="transaction-container">
+        <h2>Transaction Details</h2>
+        <div class="transaction-details">
+            <!-- Details will be filled by JavaScript -->
+        </div>
+
+        <form id="transaction-form">
+            <h2>Billing Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+
+            <label for="province">Province:</label>
+            <input type="text" id="province" name="province" required>
+
+            <label for="zipcode">Postal Code:</label>
+            <input type="text" id="zipcode" name="zipcode" required>
+
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="credit-card">Credit Card</option>
+                <option value="e-wallet">E-Wallet</option>
+            </select>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <button type="button" id="pay-button">PAY</button>
+        </form>
+
+        <div class="invoice" id="invoice" style="display: none;">
+            <h2>Invoice</h2>
+            <div class="invoice-content">
+                <!-- Invoice details will be filled by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Feather icons -->
+<script>
+    feather.replace();
+</script>
+
+    <script src="../JS/transaction.js"></script>
+</body>
+</html>

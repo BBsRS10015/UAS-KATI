@@ -1,0 +1,240 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RUBBYXXV</title>
+        <!-- Fonts API -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+        <!-- CSS Style -->
+        <link rel="stylesheet" href="CSS/Mystyle.css">
+        <!-- Feather Icons -->
+        <script src="https://unpkg.com/feather-icons"></script>
+    </head>
+    <body>
+
+        <!--Navbar-->
+    <nav class="navbar">
+        <!--Brand name-->
+        <div class="logo">RUBBY XXV</div>
+
+        <!--Menu-->
+        <div class="nav-container">
+            <div class="navbar-nav"> 
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#contact">CONTACT</a>
+                <a href="#product">PRODUCT</a>
+            </div>
+
+            <div class="extra-navbar">
+                <a href="#" id="search-button"><i data-feather="search"></i></a>
+                <a href="#" id="cart-button"><i data-feather="shopping-bag"></i></a>
+            </div>
+        </div>
+
+        <!-- Search -->
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Search">
+            <label for="search-box"><i data-feather="search"></i></label>
+        </div>
+
+        <!-- Shopping Cart -->
+        <div class="shopping-cart">
+            <h3>Cart</h3>
+            <div class="cart-items">
+                <!-- Items will be added here -->
+            </div>
+        <div class="cart-total">
+                <span>Total:</span>
+                <span id="total-price">IDR 0</span>
+            </div>
+            <button id="checkout-button">Checkout</button>
+        </div>
+        <!-- Invoice -->
+        <div class="invoice" id="invoice" style="display: none;">
+            <h3>Invoice</h3>
+            <div class="invoice-details">
+                <!-- Invoice details will be added here -->
+            </div>
+        </div>
+    </nav>
+
+    <!--about section-->
+    <section class="hero" id="home">
+        <main class="content">
+            <h1>LENGKAPI KEBUTUHAN <a href="#" class="cta">DIADU</a> ANDA</h1>
+        </main>
+    </section>
+
+    <section id="about" class="about">
+        <h2>ABOUT</h2>
+        <div class="row">
+            <div class="about-img">
+                <img src="img/me.jpg" alt="ABOUT-ME">
+            </div>
+            <div class="content">
+                <h3>DIBUAT UNTUK UAS</h3>
+                <p>
+                    IRSAN AHMAD SYAWALI (10523125)
+                </p>
+                <p>
+                    IS-3
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--product section-->
+    <section id="product" class="product">
+        <h2>PRODUCT</h2>
+        <p>
+            THE BEST MARTIAL ARTS EQUIPMENT ON THE PLANET
+        </p>
+        <div class="row">
+            <div class="product-card">
+                <img src="img/bivol.jpg" alt="SarungTinju" class="menu-card-img">
+                <h3 class="product-card-title">BOXING</h3>
+                
+            </div>
+            <div class="product-card">
+                <img src="img/bjj.jpg" alt="SarungTinju" class="menu-card-img">
+                <h3 class="product-card-title">JIU JITSU</h3>
+        
+            </div>
+            <div class="product-card">
+                <img src="img/th.jpg" alt="SarungTinju" class="menu-card-img">
+                <h3 class="product-card-title">MMA</h3>       
+            </div>
+        </div>
+    </section>
+
+    <!-- Main product-->
+    <section class="main" id="main">
+        <h2>FEATURED PRODUCT</h2>
+        <p>KILL 'EM ALL</p>
+
+        <div class="row">
+        <div class="main-card">
+            <div class="main-icons">
+            <a href="#" class="item-cart-button"><i data-feather="shopping-bag"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+            </div>
+            <div class="main-image">
+            <img src="img/glovess.jpeg" alt="Product 1">
+            </div>
+            <div class="main-content">
+            <h3>Boxing Glove</h3>
+            <div class="main-stars">
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star"></i>
+            </div>
+            <div class="main-price"><span>IDR 999.999</span></div>
+            </div>
+        </div>
+
+        <div class="main-card">
+            <div class="main-icons">
+            <a href="#" class="item-cart-button"><i data-feather="shopping-bag"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+            </div>
+            <div class="main-image">
+            <img src="img/glovess.jpeg" alt="Product 1">
+            </div>
+            <div class="main-content">
+            <h3>Boxing Glove</h3>
+            <div class="main-stars">
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star"></i>
+            </div>
+            <div class="main-price"><span>999.999</span></div>
+            </div>
+        </div>
+    </section>
+
+<!-- Contact section -->
+<section id="contact" class="contact">
+    <h2>CONTACT</h2>
+    <p>
+        YOU SUFFER, BUT WHY?
+    </p>
+    <div class="row">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.033510150886!2d107.61209307499624!3d-6.886589643112391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6f8aa08188b%3A0x632d24e6061e8903!2sUniversitas%20Komputer%20Indonesia%20(UNIKOM)!5e0!3m2!1sid!2sid!4v1722307557843!5m2!1sid!2sid"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <form action="">
+            <div class="input-group">
+                <i data-feather="user"></i>
+                <input type="text" placeholder="name">
+            </div>
+            <div class="input-group">
+                <i data-feather="mail"></i>
+                <input type="text" placeholder="email">
+            </div>
+            <div class="input-group">
+                <i data-feather="phone"></i>
+                <input type="text" inputmode="numeric"  placeholder="phone">
+            </div>
+            <button type="submit" class="btn">SEND</button>
+        </form>
+    </div>
+</section>
+
+<!--Footer-->
+<footer>
+    <div class="social">
+    <a href="#"><i data-feather="instagram"></i></a>
+    <a href="#"><i data-feather="facebook"></i></a>
+    <a href="#"><i data-feather="twitter"></i></a>
+    </div>
+    <div class="link">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+        <a href="#product">PRODUCT</a>
+    </div>
+    <div class="credit">
+        <p>Created by <a>Irsan</a> | &copy; 2024.</p>
+    </div>
+</footer>
+
+
+ <!-- Modal Box Item Detail start -->
+ <div class="modal" id="item-detail-modal">
+    <div class="modal-container">
+      <a href="#" class="close-icon"><i data-feather="x"></i></a>
+      <div class="modal-content">
+        <img src="img/glovess.jpeg" alt="Product 1">
+        <div class="product-content">
+          <h3>Boxing Glove</h3>
+          <p>Lorem psum dolor sit amet consectetur, adipisicing elit. Provident, tenetur cupiditate facilis obcaecati
+            ullam maiores minima quos perspiciatis similique itaque, esse rerum eius repellendus voluptatibus!</p>
+          <div class="product-stars">
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="main-price"><span>IDR 999.999</span></div>
+          <a href="#"><i data-feather="shopping-bag"></i> <span>add to cart</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Feather icons -->
+<script>
+    feather.replace();
+</script>
+
+<!-- MyJS -->
+<script src="JS/script.js"></script>
+</body>
+</html>
